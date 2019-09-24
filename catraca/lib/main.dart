@@ -1,15 +1,18 @@
+import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 
+import 'package:firebase_analytics/firebase_analytics.dart';
 void main() {
   runApp(new MyApp());
 }
-
+FirebaseAnalytics analytics = FirebaseAnalytics();
 var contador = 0;
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Generated App',
       theme: new ThemeData(
         brightness: Brightness.dark,
@@ -20,6 +23,9 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Merriweather',
       ),
       home: new MyHomePage(),
+      navigatorObservers: [
+        FirebaseAnalyticsObserver(analytics: analytics),
+      ],
     );
   }
 }
@@ -35,6 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return new Scaffold(
       body: new Column(
+        
           mainAxisAlignment: MainAxisAlignment.start,
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.center,

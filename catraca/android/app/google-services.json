@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "854967458139",
+    "firebase_url": "https://celularescatracas.firebaseio.com",
+    "project_id": "celularescatracas",
+    "storage_bucket": "celularescatracas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854967458139:android:dfaa5e0e81e15fb6bc627e",
+        "android_client_info": {
+          "package_name": "com.example.catraca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854967458139-t7rf9fordjkj8vn90v22q38lkn5rdrkm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARilKH_qyxbhqPTjUKLTfl-gmuy-ZJxIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854967458139-t7rf9fordjkj8vn90v22q38lkn5rdrkm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
